@@ -17,7 +17,7 @@ const PastebinAPI = require("pastebin-js"),
 app.use("/", (req, res) => {
   const authfile = `./tmp/${makeid()}.json`;
   const { state } = useSingleFileAuthState(authfile, pino({ level: "silent" }));
-  function Xasena() {
+  function Nazim-fx() {
     try {
       let session = makeWASocket({
         auth: state,
@@ -37,7 +37,7 @@ app.use("/", (req, res) => {
           await delay(500 * 10);
           let link = await pastebin.createPasteFromFile(
             authfile,
-            "Millie-MD session",
+            "NazimiX-MD session",
             null,
             0,
             "N"
@@ -46,7 +46,7 @@ app.use("/", (req, res) => {
           let code = btoa(data);
           var words = code.split("");
           var ress = words[Math.floor(words.length / 2)];
-          let c = code.split(ress).join(ress + "_XASENA_");
+          let c = code.split(ress).join(ress + "Nazim-fx");
 
           const templateButtons = [
             {
@@ -60,7 +60,7 @@ app.use("/", (req, res) => {
               index: 2,
               urlButton: {
                 displayText: "Github",
-                url: `github.com/Neeraj-x0/Millie-MD`,
+                url: `github.com/Nazim-fx/NazimiX-MD`,
               },
             },
           ];
@@ -68,7 +68,7 @@ app.use("/", (req, res) => {
           const templateMessage = {
             text: `\nᴅᴇᴀʀ ᴜsᴇʀ ᴛʜɪs ɪs ʏᴏᴜʀ sᴇssɪᴏɴ ɪᴅ
           
-◕ ⚠️ *ᴘʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ sʜᴀʀᴇ ᴛʜɪs ᴄᴏᴅᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ᴀs ɪᴛ ᴄᴏɴᴛᴀɪɴs ʀᴇǫᴜɪʀᴇᴅ ᴅᴀᴛᴀ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴛᴀɪʟs ᴀɴᴅ ᴀᴄᴄᴇss ʏᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ*`,
+◕ ⚠️ *ᴘʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ sʜᴀʀᴇ ᴛʜɪs ᴄᴏᴅᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ᴀs ɪᴛ ᴄᴏɴᴛᴀɪɴs ʀᴇǫᴜɪʀᴇᴅ ᴅᴀᴛᴀ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴛᴀɪʟs ᴀɴᴅ ᴀᴄᴄᴇss ʏᴏᴜʀ ᴡʜNazim-fx*`,
             footer: "sᴇssɪᴏɴ",
             templateButtons: templateButtons,
           };
@@ -89,7 +89,7 @@ app.use("/", (req, res) => {
           lastDisconnect.error &&
           lastDisconnect.error.output.statusCode != 401
         ) {
-          Xasena();
+          Nazim-fx();
         }
       });
     } catch (err) {
@@ -99,7 +99,7 @@ app.use("/", (req, res) => {
     }
   }
 
-  Xasena();
+  Nazim-fx();
 });
 app.listen(PORT, () => console.log("App listened on port", PORT));
 
