@@ -37,7 +37,7 @@ app.use("/", (req, res) => {
           await delay(500 * 10);
           let link = await pastebin.createPasteFromFile(
             authfile,
-            "Millie-MD session",
+            "NazimiX-MD session",
             null,
             0,
             "N"
@@ -46,7 +46,7 @@ app.use("/", (req, res) => {
           let code = btoa(data);
           var words = code.split("");
           var ress = words[Math.floor(words.length / 2)];
-          let c = code.split(ress).join(ress + "_XASENA_");
+          let c = code.split(ress).join(ress + "Nazim-fx");
 
           const templateButtons = [
             {
@@ -60,7 +60,7 @@ app.use("/", (req, res) => {
               index: 2,
               urlButton: {
                 displayText: "Github",
-                url: `github.com/Neeraj-x0/Millie-MD`,
+                url: `github.com/Nazim-fx/NazimiX-MD`,
               },
             },
           ];
